@@ -22,4 +22,11 @@ func main() {
 	var nums = []int{6,8,1,2,0,3}
 	sort.Ints(nums)
 	fmt.Println("Slice elements are: ", nums)
+
+
+	// Remove one element using slice
+	index := 2
+
+	nums = append(nums[:index], nums[index+1:]...)
+	fmt.Println(nums)
 }
