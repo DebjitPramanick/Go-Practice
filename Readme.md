@@ -1,14 +1,11 @@
 ## Required commands
 
-- Create Go module in a folder
+- Create Go file and run
 
 ```
-go mod init test
-
-```
-- - Create main.go file
-- - To run the file
-```
+mkdir test
 cd test
+go mod init test
+ni main.go
 go run main.go
 ```
